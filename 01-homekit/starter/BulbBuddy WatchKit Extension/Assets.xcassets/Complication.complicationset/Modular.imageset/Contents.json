@@ -1,0 +1,33 @@
+{
+  "images" : [
+    {
+      "filename" : "complication_52.png",
+      "idiom" : "watch",
+      "screen-width" : "<=145"
+    },
+    {
+      "filename" : "complication_58.png",
+      "idiom" : "watch",
+      "screen-width" : ">161"
+    },
+    {
+      "filename" : "complication_58-1.png",
+      "idiom" : "watch",
+      "screen-width" : ">145"
+    },
+    {
+      "filename" : "complication_64.png",
+      "idiom" : "watch",
+      "screen-width" : ">183"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "auto-scaling" : "auto",
+    "compression-type" : "automatic",
+    "preserves-vector-representation" : true
+  }
+}

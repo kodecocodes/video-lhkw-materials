@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ABDA12B25A2DF6C007FBCDE /* Bulb Buddy.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0ABDA12A25A2DF6C007FBCDE /* Bulb Buddy.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ABDA13025A2DF6D007FBCDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABDA12F25A2DF6D007FBCDE /* Assets.xcassets */; };
+		0ABDA13725A2DF6E007FBCDE /* BulbBuddy WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0ABDA13625A2DF6E007FBCDE /* BulbBuddy WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0ABDA13C25A2DF6E007FBCDE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDA13B25A2DF6E007FBCDE /* App.swift */; };
+		0ABDA14425A2DF6E007FBCDE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABDA14325A2DF6E007FBCDE /* ComplicationController.swift */; };
+		0ABDA14625A2DF6E007FBCDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABDA14525A2DF6E007FBCDE /* Assets.xcassets */; };
+		494B078325A322B000368204 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B078225A322B000368204 /* Room.swift */; };
+		494B078B25A32A3B00368204 /* Room.List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B078A25A32A3B00368204 /* Room.List.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ABDA12C25A2DF6C007FBCDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ABDA12025A2DF6C007FBCDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ABDA12925A2DF6C007FBCDE;
+			remoteInfo = "BulbBuddy WatchKit App";
+		};
+		0ABDA13825A2DF6E007FBCDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ABDA12025A2DF6C007FBCDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ABDA13525A2DF6E007FBCDE;
+			remoteInfo = "BulbBuddy WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0ABDA15125A2DF6E007FBCDE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0ABDA13725A2DF6E007FBCDE /* BulbBuddy WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABDA15525A2DF6E007FBCDE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0ABDA12B25A2DF6C007FBCDE /* Bulb Buddy.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A669DF125A7277300614C97 /* BulbBuddy WatchKit Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "BulbBuddy WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		0ABDA12625A2DF6C007FBCDE /* BulbBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulbBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABDA12A25A2DF6C007FBCDE /* Bulb Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bulb Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABDA12F25A2DF6D007FBCDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ABDA13125A2DF6D007FBCDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ABDA13625A2DF6E007FBCDE /* BulbBuddy WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BulbBuddy WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABDA13B25A2DF6E007FBCDE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		0ABDA14325A2DF6E007FBCDE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		0ABDA14525A2DF6E007FBCDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ABDA14A25A2DF6E007FBCDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494B078225A322B000368204 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		494B078A25A32A3B00368204 /* Room.List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.List.swift; sourceTree = "<group>"; };
+		4989A70925A33AEA004E2362 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/HomeKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ABDA13325A2DF6E007FBCDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ABDA11F25A2DF6C007FBCDE = {
+			isa = PBXGroup;
+			children = (
+				0ABDA12E25A2DF6C007FBCDE /* BulbBuddy WatchKit App */,
+				0ABDA13A25A2DF6E007FBCDE /* BulbBuddy WatchKit Extension */,
+				0ABDA12725A2DF6C007FBCDE /* Products */,
+				4989A70825A33AEA004E2362 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0ABDA12725A2DF6C007FBCDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ABDA12625A2DF6C007FBCDE /* BulbBuddy.app */,
+				0ABDA12A25A2DF6C007FBCDE /* Bulb Buddy.app */,
+				0ABDA13625A2DF6E007FBCDE /* BulbBuddy WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ABDA12E25A2DF6C007FBCDE /* BulbBuddy WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0ABDA12F25A2DF6D007FBCDE /* Assets.xcassets */,
+				0ABDA13125A2DF6D007FBCDE /* Info.plist */,
+			);
+			path = "BulbBuddy WatchKit App";
+			sourceTree = "<group>";
+		};
+		0ABDA13A25A2DF6E007FBCDE /* BulbBuddy WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0A669DF125A7277300614C97 /* BulbBuddy WatchKit Extension.entitlements */,
+				0ABDA14325A2DF6E007FBCDE /* ComplicationController.swift */,
+				0ABDA13B25A2DF6E007FBCDE /* App.swift */,
+				4989A70325A33AC1004E2362 /* Models */,
+				494B078F25A32A4100368204 /* Views */,
+				0ABDA14525A2DF6E007FBCDE /* Assets.xcassets */,
+				0ABDA14A25A2DF6E007FBCDE /* Info.plist */,
+			);
+			path = "BulbBuddy WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		494B078F25A32A4100368204 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				494B078A25A32A3B00368204 /* Room.List.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4989A70325A33AC1004E2362 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				494B078225A322B000368204 /* Room.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4989A70825A33AEA004E2362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4989A70925A33AEA004E2362 /* HomeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ABDA12525A2DF6C007FBCDE /* BulbBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ABDA15625A2DF6E007FBCDE /* Build configuration list for PBXNativeTarget "BulbBuddy" */;
+			buildPhases = (
+				0ABDA12425A2DF6C007FBCDE /* Resources */,
+				0ABDA15525A2DF6E007FBCDE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ABDA12D25A2DF6C007FBCDE /* PBXTargetDependency */,
+			);
+			name = BulbBuddy;
+			productName = BulbBuddy;
+			productReference = 0ABDA12625A2DF6C007FBCDE /* BulbBuddy.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		0ABDA12925A2DF6C007FBCDE /* Bulb Buddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ABDA15225A2DF6E007FBCDE /* Build configuration list for PBXNativeTarget "Bulb Buddy" */;
+			buildPhases = (
+				0ABDA12825A2DF6C007FBCDE /* Resources */,
+				0ABDA15125A2DF6E007FBCDE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ABDA13925A2DF6E007FBCDE /* PBXTargetDependency */,
+			);
+			name = "Bulb Buddy";
+			productName = "BulbBuddy WatchKit App";
+			productReference = 0ABDA12A25A2DF6C007FBCDE /* Bulb Buddy.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0ABDA13525A2DF6E007FBCDE /* BulbBuddy WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ABDA14E25A2DF6E007FBCDE /* Build configuration list for PBXNativeTarget "BulbBuddy WatchKit Extension" */;
+			buildPhases = (
+				0ABDA13225A2DF6E007FBCDE /* Sources */,
+				0ABDA13325A2DF6E007FBCDE /* Frameworks */,
+				0ABDA13425A2DF6E007FBCDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BulbBuddy WatchKit Extension";
+			productName = "BulbBuddy WatchKit Extension";
+			productReference = 0ABDA13625A2DF6E007FBCDE /* BulbBuddy WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ABDA12025A2DF6C007FBCDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					0ABDA12525A2DF6C007FBCDE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					0ABDA12925A2DF6C007FBCDE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					0ABDA13525A2DF6E007FBCDE = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 0ABDA12325A2DF6C007FBCDE /* Build configuration list for PBXProject "BulbBuddy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ABDA11F25A2DF6C007FBCDE;
+			productRefGroup = 0ABDA12725A2DF6C007FBCDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ABDA12525A2DF6C007FBCDE /* BulbBuddy */,
+				0ABDA12925A2DF6C007FBCDE /* Bulb Buddy */,
+				0ABDA13525A2DF6E007FBCDE /* BulbBuddy WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ABDA12425A2DF6C007FBCDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABDA12825A2DF6C007FBCDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABDA13025A2DF6D007FBCDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABDA13425A2DF6E007FBCDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABDA14625A2DF6E007FBCDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ABDA13225A2DF6E007FBCDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABDA14425A2DF6E007FBCDE /* ComplicationController.swift in Sources */,
+				494B078B25A32A3B00368204 /* Room.List.swift in Sources */,
+				0ABDA13C25A2DF6E007FBCDE /* App.swift in Sources */,
+				494B078325A322B000368204 /* Room.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ABDA12D25A2DF6C007FBCDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ABDA12925A2DF6C007FBCDE /* Bulb Buddy */;
+			targetProxy = 0ABDA12C25A2DF6C007FBCDE /* PBXContainerItemProxy */;
+		};
+		0ABDA13925A2DF6E007FBCDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ABDA13525A2DF6E007FBCDE /* BulbBuddy WatchKit Extension */;
+			targetProxy = 0ABDA13825A2DF6E007FBCDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ABDA14C25A2DF6E007FBCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0ABDA14D25A2DF6E007FBCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ABDA14F25A2DF6E007FBCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BulbBuddy WatchKit Extension/BulbBuddy WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4AQJ37X836;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BulbBuddy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.BulbBuddy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		0ABDA15025A2DF6E007FBCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BulbBuddy WatchKit Extension/BulbBuddy WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4AQJ37X836;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BulbBuddy WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.BulbBuddy.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		0ABDA15325A2DF6E007FBCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
+				IBSC_MODULE = BulbBuddy_WatchKit_Extension;
+				INFOPLIST_FILE = "BulbBuddy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.BulbBuddy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		0ABDA15425A2DF6E007FBCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
+				IBSC_MODULE = BulbBuddy_WatchKit_Extension;
+				INFOPLIST_FILE = "BulbBuddy WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.BulbBuddy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		0ABDA15725A2DF6E007FBCDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.BulbBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0ABDA15825A2DF6E007FBCDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4AQJ37X836;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.BulbBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ABDA12325A2DF6C007FBCDE /* Build configuration list for PBXProject "BulbBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABDA14C25A2DF6E007FBCDE /* Debug */,
+				0ABDA14D25A2DF6E007FBCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ABDA14E25A2DF6E007FBCDE /* Build configuration list for PBXNativeTarget "BulbBuddy WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABDA14F25A2DF6E007FBCDE /* Debug */,
+				0ABDA15025A2DF6E007FBCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ABDA15225A2DF6E007FBCDE /* Build configuration list for PBXNativeTarget "Bulb Buddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABDA15325A2DF6E007FBCDE /* Debug */,
+				0ABDA15425A2DF6E007FBCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ABDA15625A2DF6E007FBCDE /* Build configuration list for PBXNativeTarget "BulbBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABDA15725A2DF6E007FBCDE /* Debug */,
+				0ABDA15825A2DF6E007FBCDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0ABDA12025A2DF6C007FBCDE /* Project object */;
+}
